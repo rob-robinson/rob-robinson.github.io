@@ -176,11 +176,12 @@ img.grayscale {
     padding-top: 7%;
     height: 100%;
     width: 100%;
-    background: url(/images/bg_suburb.jpg) center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
+    margin-left:-7px;
+    background: url(../images/trees.png) center center no-repeat fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .gallery {
