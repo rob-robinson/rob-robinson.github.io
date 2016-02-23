@@ -1,2 +1,8 @@
 # rob-robinson.github.io
-This is the dist directory of https://github.com/rob-robinson/new_blank_template after running `gulp build`.
+This is the repository for <http://rob-robinson.github.io> .
+
+To run locally:
+
+`npm install`
+
+`gulp serve`

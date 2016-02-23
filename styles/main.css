@@ -122,7 +122,8 @@ img.grayscale {
 }
 
 .alt .lead {
-    color: #c0efc2
+    color: #c0efc2;
+    font-size:16px;
 }
 
 .alt.affix {
@@ -173,15 +174,14 @@ img.grayscale {
 
 .callout {
     color: #fff;
-    padding-top: 7%;
+    /*padding-top: 7%;*/
     height: 100%;
     width: 100%;
-    margin-left:-7px;
-    background: url(../images/trees.png) center center no-repeat fixed;
-    -webkit-background-size: 100% 100%;
+    background: url(../images/bg_suburb.jpg) center center no-repeat fixed;
+ /*   -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+    -o-background-size: 100% 100%;*/
+    background-size: 100% auto;
 }
 
 .gallery {
@@ -211,6 +211,6 @@ footer {
 
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 60px
+        font-size: 40px
     }
 }
