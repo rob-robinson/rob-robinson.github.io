@@ -4,7 +4,7 @@
   "description": "This is the dist directory of https://github.com/rob-robinson/new_blank_template after running `gulp build`.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "gulp serve"
   },
   "repository": {
     "type": "git",
