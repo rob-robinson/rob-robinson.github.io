@@ -1,0 +1,25 @@
+#u98
+{
+	background-color: #FFD644;
+}
+
+#u117
+{
+	background-color: transparent;
+}
+
+#u115
+{
+	display: block;
+}
+
+@media (min-width: 481px)
+{
+	#u98_align_to_page
+	{
+		max-width: 960px;
+	}
+
+}
+
+
