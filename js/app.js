@@ -24,7 +24,9 @@ $(document).ready(function(){
                 "<p>Created: " + data[i]["created_at"] + "</p>" +
                 "<p>Last Updated: " + data[i]["updated_at"] + "</p>" +
                 "<p>Source: <a href='"+ data[i]["html_url"] +"'>" + data[i]["html_url"] + "</a></p>" +
-                "<p>Preview: <a href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>https://" + s[0] + ".github.io/" + s[1]+"</a></p></li>";
+                "<p>Preview: <a href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>https://" + s[0] + ".github.io/" + s[1]+"</a></p>" +
+                "</li>"
+            ;
         }
 
         tbl_buffer += "</ul>";

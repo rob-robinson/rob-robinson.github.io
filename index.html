@@ -15,13 +15,63 @@
 </head>
 <body>
 
-<div class="container">
+<!-- nav -->
+<nav class="navbar navbar-default" style="min-height:50px">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./img/rr_brand.png" style="width:35px; height:35px; margin-top:-5px" alt=""/></a></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#content_about">About</a></li>
+                <li><a href="#content_contact">Contact</a></li>
+                <li><a href="#content_repos">Examples</a></li>
 
-    <h2>The following repos are a list of fun quick little apps that I've recently enjoyed creating...:</h2>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+<!-- /nav -->
+
+<!-- about area -->
+<div class="container" style="min-height:120px" id="content_about">
+    <h2>About Me...</h2>
+    <p style="margin:40px 2px;">I am a software developer. I have worked with PHP, MySQL, Python, and lots of JavaScript. I have also managed production linux servers for universities, and federally funded research units. I am currently using Amazon Web Services for all new production instances. I also have a lot of experience migrating physical linux servers to "the cloud".</p>
 </div>
+<!-- /about area -->
 
-<div class="container" id="repos"></div>
+<!-- contact area -->
+<div class="container" style="min-height:120px" id="content_contact">
+    <h2>Contact Me...</h2>
+    <p style="margin:40px 2px;">
+        For code / computer related inquiries, please contact me through my listed <a href="https://github.com/rob-robinson">github</a> contact information : <a
+            href="https://github.com/rob-robinson">https://github.com/rob-robinson</a>
+    </p>
+</div>
+<!-- /contact area -->
 
+<!-- repo and example area -->
+<div class="container" id="content_repos">
+    <h2>Prototypes I've recently enjoyed creating...:</h2>
+    <p style="margin:40px 2px;">Ordered by last updated... ( most of my work is private these days )</p>
+    <div id="repos"><img src="./img/wait30trans.gif" alt=""/></div>
+</div>
+<!-- /repo and example area -->
 
 <script src="./js/app.js" ></script>
 </body>
