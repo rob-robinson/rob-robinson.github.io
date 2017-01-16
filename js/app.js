@@ -4,9 +4,9 @@ function makeFormattedDate(date){
 
     return date.getFullYear() + 
             "/" + 
-            (date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth()) + 
+            (date.getMonth() < 9 ? "0" + (date.getMonth()+1) : date.getMonth()) + 
             "/" + 
-            (date.getDate() < 10 ? "0" + date.getDate() : date.getDate())
+            (date.getDate() < 9 ? "0" + (date.getDate()+1) : date.getDate())
             ;
 
 }
