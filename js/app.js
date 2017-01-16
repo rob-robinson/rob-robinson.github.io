@@ -30,12 +30,12 @@ function makeFormattedDate(date){
             var updated_at = new Date(data[i]["updated_at"]);
 
             tbl_buffer += "<li class=\"list-group-item\">" +
-                "<h3>" + data[i]["full_name"] + "</h3>" +
+                "<h2>" + s[1] + "</h2>" +
                 "<p>" + data[i]["description"] + "</p>" +
-                "<p>Created: " + makeFormattedDate(created_at) + "</p>" +
-                "<p>Last Updated: " + makeFormattedDate(updated_at) + "</p>" +
-                "<p>Source: <a href='"+ data[i]["html_url"] +"'>" + data[i]["html_url"] + "</a></p>" +
-                "<p>Preview: <a href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>https://" + s[0] + ".github.io/" + s[1]+"</a></p>" +
+                "<h4>Created:</h4><p> " + makeFormattedDate(created_at) + "</p>" +
+                "<h4>Last Updated:</h4><p> " + makeFormattedDate(updated_at) + "</p>" +
+                "<h4>Source:</h4><p> <a href='"+ data[i]["html_url"] +"'>" + data[i]["html_url"] + "</a></p>" +
+                "<h4>Preview:</h4><p> <a href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>https://" + s[0] + ".github.io/" + s[1]+"</a></p>" +
                 "</li>";
         }
 
