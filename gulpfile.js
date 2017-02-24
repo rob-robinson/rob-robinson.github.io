@@ -16,6 +16,20 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+
+// watch files for changes and reload
+gulp.task('serve', function() {
+    browserSync({
+        server: {
+            baseDir: ''
+        }
+    });
+
+    gulp.watch(['*.html', 'css/*.css', 'js/*.js'], {cwd: ''}, reload);
+});
+
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
     return gulp.src('less/freelancer.less')

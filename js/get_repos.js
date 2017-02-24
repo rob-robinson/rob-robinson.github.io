@@ -30,19 +30,38 @@ $(document).ready(function(){
                 var created_at = new Date(data[i]["created_at"]);
                 var updated_at = new Date(data[i]["updated_at"]);
 
+                tbl_buffer += "<div class=\"container\" >";
 
-                tbl_buffer += "<div class=\"portfolio-item panel panel-default\" >" +
-                    "<div class=\"panel-heading\"><strong>" + s[1] + "</strong></div>" +
-                        '<div class="panel-body">' +
-                    "<p>" + (data[i]["description"]==null ? '' : '<blockquote>' + data[i]["description"] + '</blockquote>') + "</p>" +
-                    "<b>Created:</b>" + makeFormattedDate(created_at) + ", " +
-                    "<b>Last Updated:</b>" + makeFormattedDate(updated_at) + "<br/><br/>" +
-                    "<b>Source:</b><p> <a href='"+ data[i]["html_url"] +"'>" + data[i]["html_url"] + "</a></p>" +
-                    "<b>Preview:</b><p> <a href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>https://" + s[0] + ".github.io/" + s[1]+"</a></p>" +
-                    "</div></div>";
+                tbl_buffer +=
+
+                    "<div style=\"min-height:330px; font-size:75%; vertical-align: top;\"" +
+                    "<div style='vertical-align:bottom; min-height:2px;'>" +
+                    "<h4>" + s[1] + "</h4>" +
+
+                    "<p style=\"min-height:2px;\">" + (data[i]["description"]==null ? '<br />' : '<blockquote>' + data[i]["description"] + '</blockquote>') + "</p>" +
+
+                        "<div class='container'>" +
+
+                    "<div style='text-align:center' class='col-lg-6 col-md-6 col-sm-6'><h6>Created:</h6><p>" + makeFormattedDate(created_at) + "</p></div>" +
+                    "<div style='text-align:center' class='col-lg-6 col-md-6 col-sm-6'><h6>Last Updated:</h6><p>" + makeFormattedDate(updated_at) + "</p></div>" +
+
+                        "</div>" +
+
+                    "<div class='container'>" +
+
+                    "<a style='width:100%;' class='btn btn-primary' href='"+ data[i]["html_url"] +"'>Source:</a>" +
+                    "<br />" +
+                    "<br />" +
+                    "<a style='width:100%;' class='btn btn-primary' href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>Preview</a>" +
+
+                    "</div>" +
+
+                    "</div> <br /></div>";
+
+                tbl_buffer += "</div><hr />";
             }
 
-            tbl_buffer += "";
+
 
             $("#repos").html(tbl_buffer);
 
