@@ -12,7 +12,8 @@ $(document).ready(function(){
     }
 
     $.ajax({
-        url:"https://api.github.com/users/rob-robinson/repos?sort=full_name",
+        //url:"https://api.github.com/users/rob-robinson/repos?sort=full_name",
+        url:"../data/repos.json",
         type:"GET",
         dataType: 'text'
     })
