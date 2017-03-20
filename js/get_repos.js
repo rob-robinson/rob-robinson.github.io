@@ -38,6 +38,8 @@ $(document).ready(function(){
                     "<div style='vertical-align:bottom; min-height:2px;'>" +
                     "<h4>" + s[1] + "</h4>" +
 
+                    "<img src='./img/portfolio/"+data[i]["thumb"]+"'></img>" +
+
                     "<p style=\"min-height:2px;\">" + (data[i]["description"]==null ? '<br />' : '<blockquote>' + data[i]["description"] + '</blockquote>') + "</p>" +
 
                         "<div class='container'>" +
