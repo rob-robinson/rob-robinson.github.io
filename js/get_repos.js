@@ -30,37 +30,34 @@ $(document).ready(function(){
                 var created_at = new Date(data[i]["created_at"]);
                 var updated_at = new Date(data[i]["updated_at"]);
 
-                tbl_buffer += "<div class=\"container\" >";
-
                 tbl_buffer +=
 
-                    "<div style=\"min-height:330px; font-size:75%; vertical-align: top;\"" +
-                    "<div style='vertical-align:bottom; min-height:2px;'>" +
+                "<div class=\"container\" >" +
+
+                    "<div class='col-lg-6 col-md-6 col-sm-6' style=\"min-height:330px; font-size:75%; vertical-align: top;\">" +
+
                     "<h4>" + s[1] + "</h4>" +
 
-                    "<img src='./img/portfolio/"+data[i]["thumb"]+"'></img>" +
+                    "<img style='width:100%; height:auto;'src='./img/portfolio/"+data[i]["thumb"]+"'></img>" +
 
+                    "</div>" +
+
+                    "<div class='col-lg-6 col-md-6 col-sm-6'>" +
                     "<p style=\"min-height:2px;\">" + (data[i]["description"]==null ? '<br />' : '<blockquote>' + data[i]["description"] + '</blockquote>') + "</p>" +
 
-                        "<div class='container'>" +
 
-                    "<div style='text-align:center' class='col-lg-6 col-md-6 col-sm-6'><h6>Created:</h6><p>" + makeFormattedDate(created_at) + "</p></div>" +
-                    "<div style='text-align:center' class='col-lg-6 col-md-6 col-sm-6'><h6>Last Updated:</h6><p>" + makeFormattedDate(updated_at) + "</p></div>" +
-
-                        "</div>" +
-
-                    "<div class='container'>" +
+                    "<h6>Created:</h6><p>" + makeFormattedDate(created_at) + "</p>" +
+                    "<h6>Last Updated:</h6><p>" + makeFormattedDate(updated_at) + "</p>" +
 
                     "<a style='width:100%;' class='btn btn-primary' href='"+ data[i]["html_url"] +"'>Source:</a>" +
                     "<br />" +
                     "<br />" +
                     "<a style='width:100%;' class='btn btn-primary' href='"+"https://" + s[0] + ".github.io/" + s[1]+"'>Preview</a>" +
 
-                    "</div>" +
 
-                    "</div> <br /></div>";
 
-                tbl_buffer += "</div><hr />";
+                "</div>" +
+                "</div><div style='border-top:2px solid #ccc; margin-top:80px;' class='container'></div>";
             }
 
 
