@@ -8,7 +8,6 @@ app.directive('portfolioDirective', ['repoService', function(repoService){
 
             repos.then(function(repos) {
                 scope.repos = repos;
-                console.log(scope.repos);
             });
         }
     }

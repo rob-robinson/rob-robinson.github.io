@@ -1,6 +1,9 @@
 
 <div class="row" id="repos">
 
+<p>These are some fun little apps that I made with my kids: </p>
+    <p>These are in no way meant to be anything other than toys.</p>
+
     <div style='border-top:2px solid #ccc; margin-top:30px; margin-bottom:30px;' class="container" ng-repeat="(index, repo) in repos" >
 
         <div class='col-lg-6 col-md-6 col-sm-6' style="min-height:330px; font-size:75%; vertical-align: top; padding-top:30px;">
@@ -10,7 +13,6 @@
             <p style="min-height:2px; padding:20px;">{{repo.description}}</p>
 
             <a class="btn btn-default" style="width:48%;" href="{{repo.html_url}}">View Source</a>
-
             <a class="btn btn-default" style="width:48%;" href="{{repo.preview}}">Preview</a>
         </div>
 
