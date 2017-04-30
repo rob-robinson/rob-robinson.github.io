@@ -1,26 +1,23 @@
 
-<div class="row" id="repos">
+<div class="row" id="repos" style="text-align:center">
 
-<p>These are some fun little apps that I made with my kids: </p>
+    <p>These are some fun little apps that I made with my kids: </p>
     <p>These are in no way meant to be anything other than toys.</p>
 
-    <div style='border-top:2px solid #ccc; margin-top:30px; margin-bottom:30px;' class="container" ng-repeat="(index, repo) in repos" >
+    <div style='border-top:2px solid #ccc; margin-top:30px; margin-bottom:30px; text-align:center' class="container" ng-repeat="(index, repo) in repos" >
 
-        <div class='col-lg-6 col-md-6 col-sm-6' style="min-height:330px; font-size:75%; vertical-align: top; padding-top:30px;">
+        <div style="width:100%; font-size:75%; vertical-align: top; padding-top:30px; text-align:center;">
 
         <h4>{{repo.name}}</h4>
 
             <p style="min-height:2px; padding:20px;">{{repo.description}}</p>
 
-            <a class="btn btn-default" style="width:48%;" href="{{repo.html_url}}">View Source</a>
-            <a class="btn btn-default" style="width:48%;" href="{{repo.preview}}">Preview</a>
-        </div>
-
-        <div class='col-lg-6 col-md-6 col-sm-6'>
-
             <a href="{{repo.preview}}">
-                <img style='width:100%; height:auto;padding:5px;margin-top:30px;' src="/img/portfolio/{{repo.thumb}}" />
+                <img style='border:1px solid #000000; margin: auto 0px; width:80%; height:auto;padding:5px;margin-top:30px;' src="/img/portfolio/{{repo.thumb}}" />
             </a>
+
+            <a class="btn btn-default" style="width:80%; padding:20px; margin:20px;" href="{{repo.html_url}}">View Source</a>
+
         </div>
 
     </div>
