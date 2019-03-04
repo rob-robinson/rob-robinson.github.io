@@ -13,13 +13,14 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+      <header style="padding-left:12px; padding-right:35px; padding-top:0">
+        <a href="/"><h1 class="header">{{ site.title | default: site.github.repository_name }}</h1></a>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="header"><img src="/images/rob_and_trees_sm.gif" width="190" height="238" /></p>
 
         {% if site.github.is_user_page %}
           <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
+            <li><a class="github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
           </ul>
         {% endif %}
 
@@ -27,14 +28,20 @@
 
       <section>
         {{ content }}
+
+        <hr /><hr /><hr />
+
+        {% include sidebar2.html %}
+
       </section>
 
-      <footer>
+      <!-- <footer>
         <div>
-            {% include sidebar2.html %}
+             
+            footer...
 
         </div>
-      </footer>
+      </footer> -->
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}

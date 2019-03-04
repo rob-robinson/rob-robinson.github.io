@@ -1,7 +1,9 @@
-# A placeholder page
+# Ty Fighter
 
+[play](https://rob-robinson.github.io/ty_fighter/)
 
+[view source](https://github.com/rob-robinson/ty_fighter)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper eleifend massa volutpat dapibus. Sed mollis non ante in sagittis. Phasellus eget commodo urna. Fusce lobortis interdum nisl, ac semper eros dictum a. Suspendisse aliquam, elit non ornare scelerisque, nibh risus convallis enim, ut rutrum massa tortor quis tortor. Quisque aliquet fringilla mi, at semper quam venenatis sed. Donec dolor magna, finibus a egestas id, congue et nibh.
+You get to be the pilot of a TIE Fighter shooting at the invading X-wing fighters.
 
-Nunc vel metus in ante varius hendrerit sed id ligula. Praesent hendrerit a odio a tincidunt. Cras quam quam, scelerisque eu sollicitudin ut, tincidunt non tellus. Pellentesque tristique lectus hendrerit ante efficitur ullamcorper. Fusce id mauris neque. Sed venenatis ligula ac dapibus vehicula. Pellentesque iaculis ex vel augue dictum gravida. In dictum rutrum lacus, ornare venenatis sapien interdum non. Fusce suscipit faucibus tempor. Aenean blandit quis orci eu convallis. Curabitur odio purus, luctus vel nunc vitae, viverra congue augue. Aliquam consequat nunc eros, vitae ultrices enim cursus ut. Donec bibendum commodo eros, a gravida nunc suscipit vel. Praesent a risus neque. Fusce posuere luctus rhoncus. 
+Use the arrow keys to aim and spacebar to shoot !
