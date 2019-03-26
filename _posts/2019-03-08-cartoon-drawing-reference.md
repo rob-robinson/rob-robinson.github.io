@@ -1,2 +1,0 @@
-# Drawing Reference Search Tool
-
